@@ -12,7 +12,7 @@ class db:
     @staticmethod
     def transation_init():
         transactions = pd.DataFrame()
-        src = r'c:\kodilla\db\transactions'
+        src = r'db\transactions'
         for filename in os.listdir(src):
             transactions = transactions.append(pd.read_csv(os.path.join(src,filename),index_col=0))
 
