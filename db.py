@@ -5,9 +5,9 @@ import os
 class db:
     def __init__(self):
         self.transactions = db.transation_init()
-        self.cc = pd.read_csv(r'country_codes.csv',index_col=0)
-        self.customers = pd.read_csv(r'customers.csv',index_col=0)
-        self.prod_info = pd.read_csv(r'prod_cat_info.csv')
+        self.cc = pd.read_csv(r'db\country_codes.csv',index_col=0)
+        self.customers = pd.read_csv(r'db\customers.csv',index_col=0)
+        self.prod_info = pd.read_csv(r'db\prod_cat_info.csv')
     
     @staticmethod
     def transation_init():
